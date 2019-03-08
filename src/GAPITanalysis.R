@@ -62,6 +62,7 @@ myYtraitToAnalyze <- myY[,c("Taxa","Mo98","Mn55","Cd111","Cu65")]
 
 ####Gapit will spit everything into current working directory, 
 ######so change to desired output directory
+dir.create("../results/", showWarnings = FALSE)
 setwd("../results/")
 myGAPIT <- GAPIT( 
   Y=myYtraitToAnalyze, 
